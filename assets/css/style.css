@@ -31,6 +31,12 @@ main {
   padding: 0 5%;
 }
 
+@media (max-width: 991px) {
+  main {
+    width: 100%;
+  }  
+}
+
 /*--------------------------------------------------------------
 # Back to top button / Whatsapp
 --------------------------------------------------------------*/
@@ -77,9 +83,7 @@ main {
   height: 125px;
   margin: auto;
   text-align: center;
-  overflow: hidden;
   width: 100%;
-  top: 0; /* At the top */
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
@@ -89,7 +93,7 @@ main {
   }  
   #header .logo img {
     position: fixed;
-    left: 40%;
+    left: 20%;
     top: 20px;
   }
 }
@@ -143,7 +147,7 @@ main {
   font-family: 'Spartan', sans-serif;
   font-size: 10px;
   font-weight: 500;
-  color: gray;
+  color: black;
   white-space: nowrap;
   transition: 0.3s;
   text-transform: uppercase;
@@ -154,12 +158,13 @@ main {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
+  transform: rotate(-90deg);
 }
 
-.navbar > ul > li > a:before {
+.navbar > ul > li > a:before { /* Linea subrayado*/
   content: "";
   position: absolute;
-  width: 100%;
+  width: 50%;
   height: 2px;
   bottom: -6px;
   left: 0;
@@ -175,9 +180,10 @@ main {
 }
 
 .navbar a:hover, .navbar .active, .navbar li:hover > a {
-  color: gray;
+  color: #3959bb;
+  font-weight: bolder;
+  font-size: 9px;
 }
-
 
 .navbar .dropdown ul {
   display: block;
@@ -186,7 +192,7 @@ main {
   top: calc(100% + 30px);
   margin: 0;
   padding: 10px 0;
-  z-index: 99;
+  z-index: 999;
   opacity: 0;
   visibility: hidden;
   background: #fff;
@@ -203,7 +209,7 @@ main {
   font-size: 12px;
   font-weight: 500;
   text-transform: none;
-  color: gray;
+  color: black;
 }
 
 .navbar .dropdown ul a i {
@@ -211,7 +217,8 @@ main {
 }
 
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #efbfab;
+  color: #3959bb;
+  font-size: 10px;
 }
 
 .navbar .dropdown:hover > ul {
@@ -308,7 +315,7 @@ main {
 }
 
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #efbfab;
+  color: #3959bb;
 }
 
 .navbar-mobile > ul > li {
@@ -328,7 +335,7 @@ main {
   z-index: 99;
   opacity: 1;
   visibility: visible;
-  /* background: #ff4026; */
+  
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
@@ -345,7 +352,7 @@ main {
 }
 
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #efbfab;
+  color: #3959bb;
 }
 
 .navbar-mobile .dropdown > .dropdown-active {
@@ -504,6 +511,10 @@ main {
   margin-bottom: 10%;
 }
 
+#productos .Mobile-titile {
+  display: none;
+}
+
 #productos .content h4 {
   font-weight: bold;
   text-align: initial;
@@ -535,21 +546,47 @@ main {
 }
 
 #productos .btn-wrap:hover {
-  background: #ff4026;
-  border-color: #ff4026;
-  color: #fff;
+  background: #3959bb;
+  border: none;
 }
 
-#productos .btn-wrap a:hover {
-  color: #fff;
+
+#productos  .btn-wrap a:hover {
+  color: #fff !important;
 }
+
+
 
 @media (max-width: 991px) {
   #productos .image {
     text-align: center;
   }
+
+  #productos  .Mobile-titile{
+    display: flex;
+    font-family:  'Spartan';
+  }
+
+  #productos h3 {
+    display: none;
+  }  
+    
+  #productos .content h4 {
+    font-size: 12px;
+  }
+
+  #productos .content p {
+    font-size: 12px;
+  }
+ 
+  #productos .texto {
+    padding: 5%;
+  }
+
   #productos .image img {
-    max-width: 80%;
+    height: 22%;
+    top: 330px;
+    right: 160px;
   }
 
   #productos .btn-wrap a{
@@ -580,6 +617,10 @@ main {
   margin: 10% 0;
 }
  
+.about .Mobile-titile {
+  display: none;
+}
+
 .about .content h3 {
   font-size: 32px;
   font-family: 'Spartan';
@@ -616,11 +657,37 @@ main {
 }
 
 @media (max-width: 991px) {
+  
+  .about .Mobile-titile {
+    display: flex;
+    font-family: 'Spartan';
+  }
+  .about h3{
+    display: none;
+  }
   .about .image {
     text-align: center;
+    order: -1 ;
   }
   .about .image img {
     max-width: 80%;
+  }
+  .about .content {
+    padding: 5%;
+  }
+
+  .about h4{
+    font-size: 14px  !important;
+    margin-right: 0%;
+  }
+
+  .about p {
+    font-size: 14px  !important;
+    margin-right: 0%;
+  }
+
+  .about .puntos {
+    display: none;
   }
 }
 
@@ -652,7 +719,7 @@ main {
 }
 
 .contact .contact-info h3 {
-  font-size: 28px;
+  font-size: 20px;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   margin-bottom: 15px;
@@ -706,51 +773,6 @@ main {
   }
 }
 
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 15px 0;
-  background: #f6f6f6;
-  min-height: 40px;
-  margin-top: 80px;
-}
-
-.breadcrumbs h2 {
-  font-size: 28px;
-  font-weight: 400;
-}
-
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.breadcrumbs ol li + li {
-  padding-left: 10px;
-}
-
-.breadcrumbs ol li + li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #444444;
-  content: "/";
-}
-
-@media (max-width: 768px) {
-  .breadcrumbs .d-flex {
-    display: block !important;
-  }
-  .breadcrumbs ol {
-    display: block;
-  }
-  .breadcrumbs ol li {
-    display: inline-block;
-  }
-}
 
 
 /*--------------------------------------------------------------
@@ -828,10 +850,9 @@ main {
 }
 
 #footer .footer-top .social-links a {
-  font-size: 20px;
-    color: #000;
-    transition: 0.3s;
-    font-family: 'Poppins';
+  color: #000;
+  transition: 0.3s;
+  font-family: 'Poppins';
 }
 
 #footer .footer-top .social-links i {
@@ -872,3 +893,354 @@ main {
 }
 
 
+/** PRODUCTOS PAGE **/
+
+
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+#breadcrumb {
+  margin-top: 16%;
+  justify-content: flex-end;
+  display: flex;
+}
+
+#breadcrumb a {
+  color: #8b8b8b;
+}
+
+#breadcrumb .active {
+  color: #ff4026;
+  font-weight: 600;
+}
+
+
+@media (max-width: 768px) {
+  .breadcrumbs .d-flex {
+    display: block !important;
+  }
+  .breadcrumbs ol {
+    display: block;
+  }
+  .breadcrumbs ol li {
+    display: inline-block;
+  }
+}
+
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+
+.portfolio .estrellas {
+  position: absolute;
+  top: 20%;
+  left: 5px;
+}
+
+.portfolio .portfolio-item {
+  margin-bottom: 30px;
+}
+
+.portfolio #portfolio-flters {
+  padding: 0;
+  margin: 0 auto 20px auto;
+  list-style: none;
+  text-align: center;
+}
+
+.portfolio #portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 15px 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #444444;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 3px;
+}
+
+.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+  color: #fff;
+  background: #ffbfab;
+}
+
+.portfolio #portfolio-flters li:last-child {
+  margin-right: 0;
+}
+
+.portfolio .portfolio-wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background: rgba(42, 42, 42, 0.7);
+  border-radius: 15px;
+}
+
+.portfolio .portfolio-wrap::before {
+  content: "";
+  background: rgba(42, 42, 42, 0.7);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 0;
+  border-radius: 15px;
+}
+
+.portfolio .portfolio-wrap img {
+  transition: all ease-in-out 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.portfolio .portfolio-wrap .portfolio-info h4 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.portfolio .portfolio-wrap .portfolio-info p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  font-style: italic;
+}
+
+.portfolio .portfolio-wrap .portfolio-links {
+  text-align: center;
+  z-index: 4;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a {
+  color: #fff;
+  margin: 0 5px 0 0;
+  font-size: 28px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+  color: #FFBFAB;
+}
+
+.portfolio .portfolio-wrap:hover::before {
+  opacity: 1;
+}
+
+.portfolio .portfolio-wrap:hover img {
+  transform: scale(1.2);
+  border-radius: 20px;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info {
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Pagina de Producto 
+--------------------------------------------------------------*/
+.portfolio-details {
+  padding-top: 40px;
+}
+
+.portfolio .texto strong{
+  color: #3959bb;
+}
+
+.portfolio-details .portfolio-details-slider img {
+  width: 100%;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #5c9f24;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #5c9f24;
+}
+
+.portfolio-details .portfolio-info {
+  padding: 30px;
+  box-shadow: 0px 0 30px rgba(42, 42, 42, 0.08);
+}
+
+.portfolio-details .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.portfolio-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.portfolio-details .portfolio-info ul li + li {
+  margin-top: 10px;
+}
+
+.portfolio-details .portfolio-description {
+  padding-top: 30px;
+}
+
+.portfolio-details .portfolio-description h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-description p {
+  padding: 0;
+}
+
+
+
+/*--------------------------------------------------------------
+# CollageGo
+--------------------------------------------------------------*/
+
+.collageGo {
+  margin: 5% 0;
+}
+ 
+.collageGo .content h3 {
+  font-size: 32px;
+  font-family: 'Spartan';
+  margin-bottom: 10%;
+}
+
+.collageGo .content h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+  
+.collageGo .content  p {
+  font-size: 18px;
+  color: #848484;
+  margin-right: 60px;
+}
+
+.collageGo .content .price {
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+  margin-right: 60px;
+}
+
+.collageGo .image {
+  background: url("../img/portfolio/collagego.jpg") center center no-repeat;
+  width: 400px;
+  border-radius: 20px;
+}
+
+.collageGo .imageMini {
+  background: url("../img/portfolio/minicolle.jpg") center center no-repeat;
+  width: 400px;
+  border-radius: 20px;
+}
+
+.collageGo .imageImagenes {
+  background: url("../img/portfolio/imagenes.jpg") center center no-repeat;
+  width: 400px;
+  border-radius: 20px;
+}
+
+
+.collageGo .verticalImg li {
+  list-style: none;
+}
+
+.collageGo .verticalImg {
+  margin-left: 90px;
+  justify-content: space-between;
+}
+
+.collageGo .verticalImg img {
+  width: 50px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+
+}
+
+.collageGo .image .puntos{
+
+}
+
+@media (max-width: 991px) {
+  .collageGo .image {
+    text-align: center;
+  }
+  .collageGo .image img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 667px) {
+  .collageGo .image img {
+    max-width: 100%;
+  }
+}
+
+
+#collageGo .btn-wrap a{
+  color: black;
+}
+
+#collageGo .btn-wrap {
+  padding: 10px 25px;
+  border-radius: 12px;
+  transition: 0.5s;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 5px solid #ffbfab;
+  background: #ffbfab;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+
+#collageGo .btn-wrap:hover {
+  background: #ff4026;
+  border-color: #ff4026;
+  color: #fff;
+}
+
+#collageGo .btn-wrap a:hover {
+  color: #fff;
+}
