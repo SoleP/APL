@@ -48,8 +48,8 @@ main {
   bottom: 15px;
   z-index: 996;
   background: green;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   transition: all 0.4s;
 }
@@ -61,12 +61,9 @@ main {
 }
 
 .back-to-top:hover {
-  background: #ff4026;
-  color: black;
+  box-shadow: inset 0px 0px 10px 10px rgb(0 0 0 / 30%);
 }
-.back-to-top a:hover {
-  color: white;
-}
+
 
 .back-to-top.active {
   visibility: visible;
@@ -92,9 +89,10 @@ main {
     height: 60px;
   }  
   #header .logo img {
+    max-height: 10%;
     position: fixed;
-    left: 20%;
-    top: 20px;
+    left: 40%;
+    width: 15% !important;
   }
 }
 
@@ -105,7 +103,7 @@ main {
 }
 
 #header .logo img {
-  max-height: 80px;
+  width: 10%;
   transition: opacity 500ms;
 }
 
@@ -701,6 +699,16 @@ main {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+
+.contact .estrellas {
+  margin-bottom: -60px;
+  margin-left: -50px;
+}
+
+.contact .estrellas img{
+  width: 120px;
+}
+
 .contact .contact-info {
   margin-bottom: 20px;
   text-align: center;
@@ -732,12 +740,15 @@ main {
 }
 
 .contact .contact-info a:hover {
-  color: #ff4026;
+  color: #3959bb;
+  letter-spacing: 1px;
 }
 
 .contact .contact-address, .contact .contact-phone, .contact .contact-email {
   margin-bottom: 20px;
 }
+
+
 
 @-webkit-keyframes animate-loading {
   0% {
@@ -781,7 +792,7 @@ main {
 #footer {
   background: #efbfab;
   padding: 30px 0;
-  color: #2a2a2a;
+  color: black;
   font-size: 14px;
 }
 
@@ -827,7 +838,7 @@ main {
 }
 
 #footer .footer-top .footer-links a:hover {
-  color: #ff4026;
+  color: #3959bb;
 }
 
 #footer .footer-top .footer-info {
@@ -862,8 +873,7 @@ main {
 }
 
 #footer .footer-top .social-links a:hover {
-  color: #ff4026;
-  text-decoration: none;
+  color: #3959bb;
 }
 
 #footer .footer-top .footer-links {
