@@ -64,7 +64,6 @@ main {
   box-shadow: inset 0px 0px 10px 10px rgb(0 0 0 / 30%);
 }
 
-
 .back-to-top.active {
   visibility: visible;
   opacity: 1;
@@ -74,7 +73,7 @@ main {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background-color: rgba(255, 255, 255, 1);;
+  background-color: rgba(255, 255, 255, 1);
   transition: all 0.5s;
   z-index: 997;
   height: 125px;
@@ -247,9 +246,7 @@ main {
   }
 }
 
-/**
-* Mobile Navigation 
-*/
+/* Mobile Navigation */
 .mobile-nav-toggle {
   color: black;
   font-size: 40px;
@@ -796,6 +793,10 @@ main {
   font-size: 14px;
 }
 
+#footer .logoFooterMobile {
+  display: none;
+}
+
 #footer .logoFooter img {
   height: 130px;
   padding: 10px;
@@ -817,17 +818,20 @@ main {
     justify-content: center;
     display: flex;
   }
+  #footer .logoFooterMobile {
+    width: 30%;
+    display: flex;
+    margin: auto;
+    margin-bottom: 2%;
+  }
+    #footer .logoFooter {
+    display: none;
+  }
   #footer .container {
-    display: block; 
     justify-content: space-around;
     align-items: center
   }
-  #footer .logo img {
-    height: 50px;
-  }
-  #footer .footer-top .footer-info h3 {
-    display: none;
-  }
+
   #footer .socialMedia {
     display: block !important;
   }
@@ -839,6 +843,7 @@ main {
 
 #footer .footer-top .footer-links a:hover {
   color: #3959bb;
+  letter-spacing: 1px;
 }
 
 #footer .footer-top .footer-info {
