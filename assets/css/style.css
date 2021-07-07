@@ -3,7 +3,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: 'Poppins', sans-serif;;
+  font-family: 'Poppins', sans-serif;
   color: #444444;
 }
 
@@ -18,7 +18,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Poppins', sans-serif;;
+  font-family: 'Poppins', sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -452,7 +452,6 @@ main {
 @media (max-width: 768px) {
   #hero {
     height: 300px;
-    
   }
   #hero .carousel-item {
     width: 100%;
@@ -545,12 +544,9 @@ main {
   border: none;
 }
 
-
 #productos  .btn-wrap a:hover {
   color: #fff !important;
 }
-
-
 
 @media (max-width: 991px) {
   #productos .image {
@@ -635,6 +631,7 @@ main {
   font-size: 18px;
   color: #848484;
   margin-right: 60px;
+  text-align: justify;
 }
 
 .about .image {
@@ -673,12 +670,12 @@ main {
 
   .about h4{
     font-size: 14px  !important;
-    margin-right: 0%;
+    margin-right: 0% !important;
   }
 
   .about p {
     font-size: 14px  !important;
-    margin-right: 0%;
+    margin-right: 0% !important;
   }
 
   .about .puntos {
@@ -835,6 +832,20 @@ main {
   #footer .socialMedia {
     display: block !important;
   }
+
+  #footer .socialMedia  a{
+    font-size: smaller;
+  }
+
+  #footer .footer-top .footer-info h3 {
+    font-size: 18px  !important;
+    margin: 0 0 10px 0  !important;
+  }
+
+  #footer .footer-top .social-links i {
+    padding-right: 10px !important;
+    font-size: 16px !important;
+  }
 }
 
 #footer .footer-top .footer-links a {
@@ -947,9 +958,10 @@ main {
 --------------------------------------------------------------*/
 
 .portfolio .estrellas {
-  position: absolute;
-  top: 20%;
-  left: 5px;
+  position: relative;
+  right: 200px;
+  width: 17%;
+  margin-bottom: -110px;
 }
 
 .portfolio .portfolio-item {
@@ -997,7 +1009,7 @@ main {
 
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(42, 42, 42, 0.7);
+  background: rgba(59, 39, 223, 0.7);
   position: absolute;
   left: 0;
   right: 0;
