@@ -1093,7 +1093,7 @@ main {
   padding-top: 40px;
 }
 
-.portfolio .texto strong{
+.portfolio .texto strong, .collageGo .texto strong{
   color: #3959bb;
 }
 
@@ -1182,6 +1182,7 @@ main {
   margin-right: 60px;
 }
 
+
 .collageGo .content .price {
   font-size: 18px;
   color: #000;
@@ -1190,7 +1191,7 @@ main {
 }
 
 .collageGo .image {
-  background: url("../img/portfolio/collagego.jpg") center center no-repeat;
+  background: url("../img/portfolio/CollageGo/01_smartkit.JPG") center center no-repeat;
   width: 400px;
   border-radius: 20px;
 }
@@ -1213,8 +1214,8 @@ main {
 }
 
 .collageGo .verticalImg {
-  margin-left: 90px;
-  justify-content: space-between;
+  margin-left: 5%;
+  
 }
 
 .collageGo .verticalImg img {
@@ -1224,8 +1225,11 @@ main {
 
 }
 
-.collageGo .image .puntos{
-
+.imageEstrellas {
+  display: flex;
+  margin-top: -250px;
+  margin-left: -200px;
+  width: 20%;
 }
 
 @media (max-width: 991px) {
@@ -1235,10 +1239,16 @@ main {
   .collageGo .image img {
     max-width: 80%;
   }
+  .collageGo .imageEstrellas {
+    display: none;
+  }
+  .portfolio .image {
+    display: none;
+  }
 }
-
 @media (max-width: 667px) {
   .collageGo .image img {
+
     max-width: 100%;
   }
 }
@@ -1262,12 +1272,31 @@ main {
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
-#collageGo .btn-wrap:hover {
-  background: #ff4026;
-  border-color: #ff4026;
-  color: #fff;
+#collageGo .Mini .btn-wrap:hover {
+  background: #3959bb;
+  border: none;
 }
 
 #collageGo .btn-wrap a:hover {
-  color: #fff;
+  color: #fff !important;
+  text-decoration: none;
 }
+
+.portfolioProductos {
+  margin-top: 10% !important;
+}
+
+.portfolioProductos .imagen {
+display: flex;
+justify-content: flex-end;
+margin-left: 150px;
+}
+
+.portfolioProductos .imagen .puntos {
+ width: 20pc;
+}
+
+
+
+
+
