@@ -47,6 +47,11 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="custom.css">
+
 </head>
 
 <body>
@@ -56,13 +61,13 @@
   
     <div class="bp-sticky-menu container">
 
-      <a  href="index.html" class="logo"><img id="header-logo" src="assets/img/logo.PNG" alt="" class="img-fluid"></a>
+      <a href="../ArteParaLlevar/index.html" class="logo"><img id="header-logo" src="assets/img/logo.PNG" alt="" class="img-fluid"></a>
    
       <nav id="navbar" class="navbar nav nav-menu">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
-          <li class="dropdown nav-link scrollto"><a href="#productos"><span>Productos</span> <!--<i class="bi bi-chevron-down">--></i></a>
-            <!-- <ul>
+          <li><a class="nav-link scrollto" href="../ArteParaLlevar/index.html">Inicio</a></li>
+          <li class="dropdown nav-link scrollto "><a href="../ArteParaLlevar/productos.html"><span>Productos</span> <!--<i class="bi bi-chevron-down">--></i></a>
+            <ul>
               <li class="dropdown"><a href="#productos"><span>SmartKit</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="smartkit.html#CollageGo">Collage Go</a></li>
@@ -72,9 +77,9 @@
               </li>
               <li><a href="#">Bordado</a></li>
               <li><a href="#">Pintura</a></li>
-            </ul> -->
+            </ul>
           </li>
-          <li><a class="nav-link scrollto" href="#about">Quienes Somos</a></li>
+          <li><a class="nav-link scrollto" href="../ArteParaLlevar/index.html#about">Quienes Somos</a></li>
           <li><a class="nav-link scrollto" href="#footer">Contact</a></li>
          
         </ul>
@@ -87,60 +92,85 @@
   <main id="main">
     <!-- ======= Breadcrumb ======= -->
     <section id="breadcrumb">
-      <nav aria-label="breadcrumb">
+      <!-- <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item"><a href="productos.html">Productos</a></li>
+          <li class="breadcrumb-item"><a href="../ArteParaLlevar/index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="../ArteParaLlevar/productos.html">Productos</a></li>
+          <li class="breadcrumb-item"><a href="../ArteParaLlevar/productos.html">SmaARTKit</a></li>
           <li class="breadcrumb-item active" aria-current="page">Collage Go</li>
         </ol>
-      </nav>
+      </nav> -->
     </section>
     <!-- End Breadcrumb -->
 
     <!-- ======= Collage Go ======= -->
     <section id="collageGo" class="collageGo">
-      <div class="container">
-        <div class="row no-gutters">
-            <div class= "col-6 texto d-flex">
-              <div class="content d-flex flex-column justify-content-center">
-                <h3>Mini Collage GO</h3>
-                <h4>
-                  Un mini smART kit para crear y experimentar con la 
-                  técnica del collage con pocos elementos. 
-                </h4>
-                <p>
-                  Contiene: Libreta, plantillas autoadhesivas con imágenes, tijera, estilógrafo. 
-                  Todo en una hermosa bolsa estampada a mano con la técnica block print.     
-                </p>
-                <p class="price">$2000</p>
-                <div class="btn-wrap">
-                  <a href="https://wa.me/447563294178/?text=Hola%20buenos%20días,%20estoy%20interesado/a%20en…" target="_blank" class="btn-buy"><strong>Comprar</strong> </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-4 d-flex">
-              <div class="image content d-flex flex-column justify-content-center">
-                <img class= "puntos" src="../ArteParaLlevar/assets/img/puntos.png" alt="">
-              </div>
-            </div>
-
-            <div class="col-2 d-flex">
-              <ul class="verticalImg content d-flex flex-column">            
-                    <li><img data-gallery="portfolioGallery" class="portfolio-lightbox" class= "portfolio-lightbox" title="Estampado 1"  src="../ArteParaLlevar/assets/img/portfolio/collagego.jpg" alt=""></li>
-                    <li><img data-gallery="portfolioGallery" class="portfolio-lightbox" class= "portfolio-lightbox" title="Estampado 2"  src="../ArteParaLlevar/assets/img/portfolio/imagenes.jpg" alt=""></li>
-                    <li><img data-gallery="portfolioGallery" class="portfolio-lightbox" class= "portfolio-lightbox" title="Estampado 3"  src="../ArteParaLlevar/assets/img/portfolio/minicolle.jpg" alt=""></li>
-                    <li><img data-gallery="portfolioGallery" class="portfolio-lightbox" class= "portfolio-lightbox" title="Estampado 4"  src="../ArteParaLlevar/assets/img/portfolio/imagenes.jpg" alt=""></li>
-                    <li><img data-gallery="portfolioGallery" class="portfolio-lightbox" class= "portfolio-lightbox" title="Estampado 5"  src="../ArteParaLlevar/assets/img/portfolio/minicolle.jpg" alt=""></li>             
-              </ul>
-            </div>
-
-        </div>
+      
+      <div class="texto">
+        <p>Sm<strong>ART Kit</strong></p>
       </div>
-    </section><!-- End collageGo -->
+
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <!--COL UNO-->
+          <div class="col-md-4 Mini content d-flex flex-column">
+              <h3>Mini Collage GO</h3>
+              <h4>
+                Un mini smART kit para crear y experimentar con la 
+                técnica del collage con pocos elementos. 
+              </h4>
+              <p>
+                Contiene: Libreta, plantillas autoadhesivas con imágenes, tijera, estilógrafo. 
+                Todo en una hermosa bolsa estampada a mano con la técnica block print.     
+              </p>
+              <p class="price">$2000</p>
+              <div class="btn-wrap">
+                <a href="https://wa.me/447563294178/?text=Hola%20buenos%20días,%20estoy%20interesado/a%20en…" target="_blank" class="btn-buy">  <i class="fab fa-whatsapp"></i> Comprar</a>
+              </div>
+          </div>
+
+          <!--COL DOS-->
+          <div class="col-md-4">
+            <img data-gallery="portfolioGallery" class="portfolio-CollageGo" class= "portfolio-CollageGo" title="Estampado 3"  src="../ArteParaLlevar/assets/img/portfolio/collagego.jpg" alt="">   
+          </div>
+
+                
+          <!--COL TRES-->
+          <div class="col-md-4 uk-slideshow">
+            <ul class="verticalImg content d-flex flex-column uk-slideshow-items">            
+                <li><img data-gallery="portfolioGallery" class="portfolio-CollageGo" class= "portfolio-CollageGo" title="Estampado 4"  src="../ArteParaLlevar/assets/img/portfolio/CollageGo/01_smartkit.JPG" alt=""></li>
+                <li><img data-gallery="portfolioGallery" class="portfolio-CollageGo" class= "portfolio-CollageGo" title="Estampado 4"  src="../ArteParaLlevar/assets/img/portfolio/CollageGo/02_smartkit.JPG" alt=""></li>
+                <li><img data-gallery="portfolioGallery" class="portfolio-CollageGo" class= "portfolio-CollageGo" title="Estampado 5"  src="../ArteParaLlevar/assets/img/portfolio/CollageGo/03_smartkit.JPG" alt=""></li>             
+                <li><img data-gallery="portfolioGallery" class="portfolio-CollageGo" class= "portfolio-CollageGo" title="Estampado 5"  src="../ArteParaLlevar/assets/img/portfolio/CollageGo/Estampas/Circulos.jpg" alt=""></li>             
+                <li><img data-gallery="portfolioGallery" class="portfolio-CollageGo" class= "portfolio-CollageGo" title="Estampado 5"  src="../ArteParaLlevar/assets/img/portfolio/CollageGo/Estampas/CirculosColor.png" alt=""></li>
+                <li><img data-gallery="portfolioGallery" class="portfolio-CollageGo" class= "portfolio-CollageGo" title="Estampado 5"  src="../ArteParaLlevar/assets/img/portfolio/CollageGo/Estampas/Cuadrille.png" alt=""></li>
+                <li><img data-gallery="portfolioGallery" class="portfolio-CollageGo" class= "portfolio-CollageGo" title="Estampado 5"  src="../ArteParaLlevar/assets/img/portfolio/CollageGo/Estampas/CuadrilleColor.png" alt=""></li>   
+                <li><img data-gallery="portfolioGallery" class="portfolio-CollageGo" class= "portfolio-CollageGo" title="Estampado 5"  src="../ArteParaLlevar/assets/img/portfolio/CollageGo/Estampas/Lego.jpg" alt=""></li>
+                <li><img data-gallery="portfolioGallery" class="portfolio-CollageGo" class= "portfolio-CollageGo" title="Estampado 5"  src="../ArteParaLlevar/assets/img/portfolio/CollageGo/Estampas/Patchwork.jpg" alt=""></li>
+                <li><img data-gallery="portfolioGallery" class="portfolio-CollageGo" class= "portfolio-CollageGo" title="Estampado 5"  src="../ArteParaLlevar/assets/img/portfolio/CollageGo/Estampas/Rayas.png" alt=""></li>  
+                <li><img data-gallery="portfolioGallery" class="portfolio-CollageGo" class= "portfolio-CollageGo" title="Estampado 5"  src="../ArteParaLlevar/assets/img/portfolio/CollageGo/Estampas/Triangulos.jpg" alt=""></li>
+                <li><img data-gallery="portfolioGallery" class="portfolio-CollageGo" class= "portfolio-CollageGo" title="Estampado 5"  src="../ArteParaLlevar/assets/img/portfolio/CollageGo/Estampas/ZigZag.png" alt=""></li>        
+            
+            </ul>          
+          </div>
+
+        </div>   
+      </div>           
+
+      
+      
+      
+
+    </section>
+    
+    <!-- End collageGo -->
+
+    <div class="imageEstrellas">
+      <img class= "estrellas" src="../ArteParaLlevar/assets/img/estrellasProd.png" alt="">
+    </div>
 
     <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
+    <section id="portfolio" class="portfolio portfolioProductos">
 
       <div class="texto">
         <p>Más de Sm<strong>ART Kit</strong></p>
@@ -148,15 +178,19 @@
 
       <div class="row portfolio-container">
 
+        <div class="imagen">
+          <img class= "puntos" src="../ArteParaLlevar/assets/img/puntos.PNG" alt="">
+        </div>
+
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
           <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/minicolle.jpg" class="img-fluid" alt="">
+            <img src="../ArteParaLlevar/assets/img/portfolio/minicolle.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>$2200</h4>
-              <p>Collage GO</p>
+              <h4>Mini Collage GO</h4>
+              <p>$2200</p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/minicolle.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Collage GO"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="Ver Mas"><i class="bx bx-link"></i></a>
+                <a href="../ArteParaLlevar/assets/img/portfolio/minicolle.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Collage GO"><i class="bx bx-plus"></i></a>
+                <a href="../ArteParaLlevar/miniCollage.html" title="Ver Mas"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -164,21 +198,23 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/imagenes.jpg" class="img-fluid" alt="">
+            <img src="../ArteParaLlevar/assets/img/portfolio/imagenes.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Collage GO</h4>
+              <h4>Pack de Imagenes</h4>
               <p>$2200</p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/imagenes.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Collage GO"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="Ver Mas"><i class="bx bx-link"></i></a>
+                <a href="../ArteParaLlevar/assets/img/portfolio/imagenes.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Collage GO"><i class="bx bx-plus"></i></a>
+                <a href="../ArteParaLlevar/packImagenes.html" title="Ver Mas"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
         </div>
-      </div>
+        
+      </div>  
 
     </section><!-- End Portfolio Section -->
     
+
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -188,12 +224,12 @@
 
           <div class="footer-links" style="display: flex; align-items: center;
             ">
-            <a href="index.html" class="logoFooter"><img src="assets/img/logo.PNG" alt="" class="img-fluid"></a>
+            <a href="../ArteParaLlevar/index.html" class="logoFooter"><img src="../ArteParaLlevar/assets/img/logo.PNG" alt="" class="img-fluid"></a>
             <ul>
-              <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
-              <li><a class="nav-link scrollto" href="#productos">Productos</a></li>
-              <li><a class="nav-link scrollto" href="#about">Quienes Somos</a></li>
-              <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
+              <li><a class="nav-link scrollto active" href="../ArteParaLlevar/index.html#hero">Inicio</a></li>
+              <li><a class="nav-link scrollto" href="../ArteParaLlevar/productos.html">Productos</a></li>
+              <li><a class="nav-link scrollto" href="../ArteParaLlevar/index.html#about">Quienes Somos</a></li>
+              <li><a class="nav-link scrollto" href="../ArteParaLlevar/index.html#contact">Contacto</a></li>
             </ul>
           </div>
 
@@ -213,8 +249,9 @@
       </div>
     </div>
 
-
   </footer><!-- End Footer -->
+
+  
 
   <a href="https://api.whatsapp.com/send?phone=447563294178" class="back-to-top d-flex align-items-center justify-content-center"><i class="fab fa-whatsapp"></i></a>
 
@@ -228,6 +265,9 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+
+  
 
 </body>
 
