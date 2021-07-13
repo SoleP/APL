@@ -117,6 +117,7 @@ main {
 .navbar {
   padding: 0;
   justify-content: center;
+  margin-bottom: 0 !important;
 }
 
 .navbar ul {
@@ -957,6 +958,10 @@ main {
 # Portfolio
 --------------------------------------------------------------*/
 
+.portfolio .texto strong {
+  color: #3959bb;
+}
+
 .portfolio .estrellas {
   position: relative;
   right: 200px;
@@ -1086,74 +1091,6 @@ main {
   opacity: 1;
 }
 
-/*--------------------------------------------------------------
-# Pagina de Producto 
---------------------------------------------------------------*/
-.portfolio-details {
-  padding-top: 40px;
-}
-
-.portfolio .texto strong, .collageGo .texto strong{
-  color: #3959bb;
-}
-
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #5c9f24;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #5c9f24;
-}
-
-.portfolio-details .portfolio-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(42, 42, 42, 0.08);
-}
-
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
-}
-
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li + li {
-  margin-top: 10px;
-}
-
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
-}
-
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.portfolio-details .portfolio-description p {
-  padding: 0;
-}
 
 
 
@@ -1161,10 +1098,26 @@ main {
 # CollageGo
 --------------------------------------------------------------*/
 
-.collageGo {
-  margin: 5% 0;
+@media (min-width: 991px) {
+  #collageGo .collagetexto {
+    display: none;
+  }
+}
+
+#collageGo .texto strong {
+  color: #3959bb;
+  font-weight: bold;
+  padding-right: 5px;
+}
+
+#collageGo .texto p {
+  color: #8b8b8b;
+  display: flex;
+  justify-content: flex-end;
+  letter-spacing: 1px;
 }
  
+
 .collageGo .content h3 {
   font-size: 32px;
   font-family: 'Spartan';
@@ -1173,13 +1126,14 @@ main {
 
 .collageGo .content h4 {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 700;  
+  text-align: justify;
 }
   
 .collageGo .content  p {
   font-size: 18px;
   color: #848484;
-  margin-right: 60px;
+  text-align: justify;
 }
 
 
@@ -1190,69 +1144,127 @@ main {
   margin-right: 60px;
 }
 
-.collageGo .image {
-  background: url("../img/portfolio/CollageGo/01_smartkit.JPG") center center no-repeat;
+@media (max-width: 991px) {
+  #collageGo h3 {
+    display: none;
+  } 
+  #collageGo .texto {
+    margin-top: 20%;
+    justify-content: center;
+    display: flex;
+  }  
+
+  #collageGo .collagetexto {
+    font-size: 32px;
+    font-family: 'Spartan';
+    margin-bottom: 10%;
+  }
+
+  .collageGo .content h4 {
+    font-weight: 700;
+    font-size: small;
+    margin-top: 10%;
+  }
+
+  .collageGo .content  p {
+    margin-right: 0; 
+    font-size: small; 
+  }
+}
+
+/* --------- CAROUSEL --------- */
+
+
+@media (max-width: 991px) {
+  #portfolioCarousel {
+    order: -1;
+  } 
+}
+
+#portfolioCarousel .show {
   width: 400px;
-  border-radius: 20px;
-}
-
-.collageGo .imageMini {
-  background: url("../img/portfolio/minicolle.jpg") center center no-repeat;
-  width: 400px;
-  border-radius: 20px;
-}
-
-.collageGo .imageImagenes {
-  background: url("../img/portfolio/imagenes.jpg") center center no-repeat;
-  width: 400px;
-  border-radius: 20px;
-}
-
-
-.collageGo .verticalImg li {
-  list-style: none;
-}
-
-.collageGo .verticalImg {
-  margin-left: 5%;
-  
-}
-
-.collageGo .verticalImg img {
-  width: 50px;
-  border-radius: 5px;
+  height: 400px;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-
 }
+
+#portfolioCarousel .small-img {
+  width: 350px;
+  height: 70px;
+  margin-top: 20px;
+  position: relative;
+  left: 25px;
+}
+
+#portfolioCarousel .small-img .icon-left, .small-img .icon-right {
+  width: 12px;
+  height: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+#portfolioCarousel .small-img .icon-left { transform: rotate(180deg) }
+
+#portfolioCarousel .small-img .icon-right { right: 0; }
+
+#portfolioCarousel .small-img .icon-left:hover, .small-img .icon-right:hover { opacity: .5; }
+
+#portfolioCarousel .small-container {
+  width: 310px;
+  height: 70px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+/*Pack Go*/
+#portfolioCarousel .packGo {
+  width: 140px;
+}
+#portfolioCarousel .small-container div {
+  width: 800%;
+  position: relative;
+}
+
+#portfolioCarousel .show{
+  border-radius: 20px;
+}
+
+#portfolioCarousel .small-container .show-small-img {
+  width: 70px;
+  height: 70px;
+  margin-right: 6px;
+  cursor: pointer;
+  float: left;
+  border-radius: 20px;
+}
+
+#portfolioCarousel .small-container .show-small-img:last-of-type { margin-right: 0; }
+
+
+/* FIN CAROUSEL */
+
+
 
 .imageEstrellas {
   display: flex;
-  margin-top: -250px;
-  margin-left: -200px;
-  width: 20%;
+  margin-top: -120px;
+  margin-left: -100px;
+}
+
+.imageEstrellas img {
+  width: 10pc;
 }
 
 @media (max-width: 991px) {
-  .collageGo .image {
-    text-align: center;
-  }
-  .collageGo .image img {
-    max-width: 80%;
-  }
-  .collageGo .imageEstrellas {
+  .imageEstrellas {
     display: none;
-  }
-  .portfolio .image {
-    display: none;
-  }
+  } 
 }
-@media (max-width: 667px) {
-  .collageGo .image img {
-
-    max-width: 100%;
-  }
-}
-
 
 #collageGo .btn-wrap a{
   color: black;
@@ -1270,6 +1282,13 @@ main {
   display: flex;
   justify-content: center;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  font-weight: 700;
+}
+
+@media (max-width: 991px) {
+  #collageGo .btn-wrap {
+   margin: 0;
+  } 
 }
 
 #collageGo .Mini .btn-wrap:hover {
@@ -1281,6 +1300,8 @@ main {
   color: #fff !important;
   text-decoration: none;
 }
+
+/* --------- PUNTOS DECORACION --------- */
 
 .portfolioProductos {
   margin-top: 10% !important;
@@ -1294,6 +1315,12 @@ margin-left: 150px;
 
 .portfolioProductos .imagen .puntos {
  width: 20pc;
+}
+
+@media (max-width: 991px) {
+  .portfolioProductos .imagen {
+    display: none;
+  } 
 }
 
 
