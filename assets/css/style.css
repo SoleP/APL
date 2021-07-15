@@ -813,10 +813,7 @@ main {
 
 
 @media (max-width: 991px) {
-  #footer{
-    justify-content: center;
-    display: flex;
-  }
+
   #footer .logoFooterMobile {
     width: 30%;
     display: flex;
@@ -918,6 +915,28 @@ main {
 
 #footer .footer-top .footer-links ul li:first-child {
   padding-top: 0;
+}
+
+/* Copyright */
+
+#footer .footerContainer {
+  position: relative;
+  height: 50px;
+  width: 100%; 
+}
+
+#footer .copyright {
+  position: absolute;
+  width: 100%;
+  color: #8b8b8b;
+  line-height: 40px;
+  font-size: 0.8em;
+  text-align: center;
+  bottom:0;
+}
+
+#footer .copyright strong {
+  color: #3959bb;
 }
 
 
@@ -1193,7 +1212,7 @@ main {
   height: 70px;
   margin-top: 20px;
   position: relative;
-  left: 25px;
+  /* left: 25px; */
 }
 
 #portfolioCarousel .small-img .icon-left, .small-img .icon-right {
