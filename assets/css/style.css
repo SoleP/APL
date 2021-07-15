@@ -181,6 +181,7 @@ main {
   color: #3959bb;
   font-weight: bolder;
   font-size: 9px;
+  text-decoration: none;
 }
 
 .navbar .dropdown ul {
@@ -1307,11 +1308,6 @@ main {
   margin-top: 10% !important;
 }
 
-.portfolioProductos .imagen {
-display: flex;
-justify-content: flex-end;
-margin-left: 150px;
-}
 
 .portfolioProductos .imagen .puntos {
  width: 20pc;
