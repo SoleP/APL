@@ -38,7 +38,7 @@ main {
 }
 
 /*--------------------------------------------------------------
-# Back to top button / Whatsapp
+# Whatsapp button 
 --------------------------------------------------------------*/
 .back-to-top {
   position: fixed;
@@ -107,13 +107,10 @@ main {
 }
 
 
-
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
-/**
-* Desktop Navigation 
-*/
+/* Desktop Navigation */
 .navbar {
   padding: 0;
   justify-content: center;
@@ -357,7 +354,7 @@ main {
 }
 
 /*--------------------------------------------------------------
-# Hero Section -Slide/Carousel
+# Hero Section - Slide/Carousel
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
@@ -474,7 +471,7 @@ main {
 
 
 /*--------------------------------------------------------------
-# productos
+# Productos Section
 --------------------------------------------------------------*/
 
 #productos {
@@ -496,7 +493,7 @@ main {
 }
 
 #productos .texto {
-  padding-left: 13%;
+  padding-left: 5%;
 }
 
 #productos .content h3 {
@@ -603,7 +600,7 @@ main {
 
 
 /*--------------------------------------------------------------
-# about
+# about Section
 --------------------------------------------------------------*/
 
 .about {
@@ -646,7 +643,7 @@ main {
   height: 70%;
   position: relative;
   top: 215px;
-  right: -210px;
+  right: -290px;
 
 }
 
@@ -693,7 +690,7 @@ main {
 
 
 /*--------------------------------------------------------------
-# Contact
+# Contact Section
 --------------------------------------------------------------*/
 
 .contact .estrellas {
@@ -783,7 +780,7 @@ main {
 
 
 /*--------------------------------------------------------------
-# Footer
+# Footer Section
 --------------------------------------------------------------*/
 #footer {
   background: #efbfab;
@@ -810,7 +807,6 @@ main {
   justify-content: flex-end; 
   display: flex;
 }
-
 
 @media (max-width: 991px) {
 
@@ -940,28 +936,27 @@ main {
 }
 
 
-/** PRODUCTOS PAGE **/
+
+/*--------------------------------------------------------------
+                      PRODUCT PAGE 
+--------------------------------------------------------------*/
 
 
 /*--------------------------------------------------------------
-# Breadcrumbs
+# General Breadcrumbs - Disable for the moment -
 --------------------------------------------------------------*/
 #breadcrumb {
   margin-top: 16%;
   justify-content: flex-end;
   display: flex;
 }
-
 #breadcrumb a {
   color: #8b8b8b;
 }
-
 #breadcrumb .active {
   color: #ff4026;
   font-weight: 600;
 }
-
-
 @media (max-width: 768px) {
   .breadcrumbs .d-flex {
     display: block !important;
@@ -975,11 +970,18 @@ main {
 }
 
 /*--------------------------------------------------------------
-# Portfolio
+Portfolio / PRODUCTOS 
 --------------------------------------------------------------*/
 
 .portfolio .texto strong {
   color: #3959bb;
+}
+
+.portfolio .texto .proximamente {
+  display: flex;
+  justify-content: center;
+  color: #8b8b8b;
+  font-style: italic;
 }
 
 .portfolio .estrellas {
@@ -1113,9 +1115,8 @@ main {
 
 
 
-
 /*--------------------------------------------------------------
-# CollageGo
+PRODUCTOS CollageGo
 --------------------------------------------------------------*/
 
 @media (min-width: 991px) {
@@ -1192,13 +1193,17 @@ main {
   }
 }
 
-/* --------- CAROUSEL --------- */
+/* --------- PRODUCTOS/ESTAMPAS CAROUSEL --------- */
 
 
 @media (max-width: 991px) {
   #portfolioCarousel {
     order: -1;
   } 
+
+  #portfolioCarousel .zoom {
+    display: none;
+  }
 }
 
 #portfolioCarousel .show {
@@ -1212,7 +1217,7 @@ main {
   height: 70px;
   margin-top: 20px;
   position: relative;
-  /* left: 25px; */
+  left: 25px;
 }
 
 #portfolioCarousel .small-img .icon-left, .small-img .icon-right {
@@ -1266,9 +1271,7 @@ main {
 #portfolioCarousel .small-container .show-small-img:last-of-type { margin-right: 0; }
 
 
-/* FIN CAROUSEL */
-
-
+/* Decoracion Fondo Estrellas */
 
 .imageEstrellas {
   display: flex;
